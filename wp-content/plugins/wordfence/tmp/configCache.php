@@ -1,0 +1,6 @@
+<?php
+/* Wordfence temporary file security header */
+echo "Nothing to see here!\n"; exit(0);
+?>a:33:{s:9:"cacheType";s:0:"";s:9:"howGetIPs";s:0:"";s:6:"apiKey";s:160:"19acd23e59ec9b41bfd13cca65704aa54be398462aa6df7b25fd5d6a8bb3085de8a575428f055538fbebd55860f83d6dc3405f23c931cd5c906728be97cefed8d79fab4fac851bc3335d5087f32eab68";s:20:"loginSec_lockoutMins";s:3:"240";s:19:"other_hideWPVersion";s:1:"1";s:15:"firewallEnabled";s:1:"1";s:11:"whitelisted";s:0:"";s:6:"isPaid";s:0:"";s:11:"blockedTime";s:3:"300";s:12:"neverBlockBG";s:18:"neverBlockVerified";s:13:"blockFakeBots";s:1:"0";s:10:"bannedURLs";s:0:"";s:18:"other_blockBadPOST";s:1:"0";s:18:"liveTrafficEnabled";s:1:"1";s:14:"disableCookies";s:1:"0";s:10:"tourClosed";s:0:"";s:17:"actUpdateInterval";s:0:"";s:7:"debugOn";s:1:"0";s:13:"welcomeClosed";s:1:"1";s:38:"email_summary_dashboard_widget_enabled";s:1:"1";s:22:"email_summary_interval";s:8:"biweekly";s:26:"loginSec_disableAuthorScan";s:1:"1";s:18:"liveTraf_ignoreIPs";s:0:"";s:17:"liveTraf_ignoreUA";s:0:"";s:6:"encKey";s:16:"199049b124bbbfed";s:11:"other_WFNet";s:1:"1";s:10:"ssl_verify";s:1:"1";s:11:"allowed404s";s:45:"/favicon.ico
+/apple-touch-icon*.png
+/*@2x.png";s:17:"maxGlobalRequests";s:8:"DISABLED";s:9:"vulnRegex";s:0:"";s:12:"max404Humans";s:8:"DISABLED";s:25:"liveTraf_ignorePublishers";s:1:"1";s:17:"maxRequestsHumans";s:8:"DISABLED";}

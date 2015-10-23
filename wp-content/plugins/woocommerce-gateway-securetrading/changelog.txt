@@ -1,0 +1,39 @@
+*** SecureTrading Changelog ***
+
+2014.12.12 	- version 1.4.2
+* Fix		- Empty cart in function successful_request() after payment_complete() is triggered. Better compatibility with the Cart Reports extension.
+
+2014.11.12 	- version 1.4.1
+ * Feature	- Custom JS styling of the payment page via ST's Parent JS and Child JS feature.
+ * Tweak	- Updated the ST logo displayed in checkout.
+ 
+2014.07.15 	- version 1.4
+ * Feature	- Custom CSS styling of the payment page via ST's Parent CSS and Child CSS feature.
+ * Tweak	- Added apply_filters securetrading_checkout_form (to the checkout form args before adding them as form fields).
+
+2014.07.04 	- version 1.3.4
+ * Feature	- Support for Sequential orders Pro
+ 
+2014.02.06 	- version 1.3.3
+ * Fix		- Typo in backward compatibility class (WC_St_Compatibility)
+
+2014.01.29 	- version 1.3.2
+ * Fix		- WooCommerce 2.1 compatibility
+ 
+2013.11.15 	- version 1.3.1
+ * Tweak	-	Removed function check_securetrading_request_is_valid(). 200 response posted in function check_securetrading_request_is_valid() instead.
+
+2013.02.20 	- version 1.3
+ * WC 2.0 compat
+
+2012.12.05 	- version 1.2.1
+ * Updater
+
+2012.10.22 	- version 1.2
+ * Updated classes
+
+2011.12.19 	- version 1.1
+ * Enhanced security and easier set up of settings in the SecureTrading MyST Account.
+
+2011.12.15 	- version 1.0
+ * First Release

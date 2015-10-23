@@ -1,0 +1,74 @@
+<?php
+/**
+ * Customer invoice email
+ *
+ * @author 		WooThemes
+ * @package 	WooCommerce/Templates/Emails
+ * @version     2.0.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
+
+<?php do_action('woocommerce_email_header', $email_heading); ?>
+
+
+
+<tr><td align="left" style="text-align: left;">
+
+	<table width="614" cellspacing="0" cellpadding="6" border="0" style="font-family: sans-serif, Arial;font-size: 13px;text-align: left;color: #303030;line-height: 19px;">
+        <tr>
+            <td height="45" style="text-align: left;"><h1 style="line-height: 0px;text-align: left;color: #2e89c9;font-size: 23px;">Invoice for Order <?php echo $order->get_order_number(); ?> (<?php echo date_i18n( woocommerce_date_format(), strtotime( $order->order_date ) ); ?>) </h1></td>
+        </tr>
+        <tr>
+            <td height="30" style="text-align: left;"><h2 style="font-size: 16px;margin: 0px;line-height: 0px;font-weight: bold;color: #303030;">Thank you for your order.</h2></td>
+        </tr>
+		<?php if ($order->status=='pending') : ?>
+		<tr>
+            <td height="30" style="text-align: left;"><p style="margin: 0px;padding: 1px;line-height: 19px;text-align: left;color: #303030;"><?php printf( __( 'To pay for this order please %s', 'woocommerce' ), '<a href="' . $order->get_checkout_payment_url() . '">click here</a>.' ); ?></p></td>
+        </tr>
+		<?php endif; ?>
+        <tr><td class="divider" style="text-align: left;height: 19px;display: block;width: 615px;padding: 0px;margin: 0px;"></td></tr>
+    </table>
+
+	<table width="614" cellspacing="0" cellpadding="6" border="0" bordercolor="#efefef" class="border" style="font-family: sans-serif, Arial;font-size: 13px;text-align: left;color: #303030;line-height: 19px;border-right: 1px solid #d3d3d3;">
+		<!-- table header -->
+		<tr>
+			<th width="371" align="left" style="text-align: left;border-top: 1px solid #d3d3d3;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;background: #f7f7f7;">Product</th>
+			<th width="100" align="left" style="text-align: left;border-top: 1px solid #d3d3d3;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;background: #f7f7f7;">Quantity</th>
+			<th width="100" align="left" style="text-align: left;border-top: 1px solid #d3d3d3;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;background: #f7f7f7;">Price</th>
+		</tr>
+		
+		<?php echo $order->email_order_items_table( $order->is_download_permitted(), true ); ?>
+	</table>
+
+
+	<table width="614" border="0" cellpadding="6" cellspacing="0" bordercolor="#eee" class="border" style="font-family: sans-serif, Arial;font-size: 13px;text-align: left;color: #303030;line-height: 19px;border-right: 1px solid #d3d3d3;">
+	<?php
+		if ( $totals = $order->get_order_item_totals() ) {
+			$i = 0;
+			foreach ( $totals as $total ) {
+				$i++;
+				?><tr class="lh17" style="line-height: 17px;">
+					<th colspan="2" align="left" width="50%" class="l" style="text-align: left;border-top: 0px;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;background: #f7f7f7;"><?php echo $total['label']; ?></th>
+					<td style="text-align: left;border-bottom: 1px solid #d3d3d3;border-left: 1px solid #d3d3d3;"><?php echo $total['value']; ?></td>
+				</tr><?php
+			}
+		}
+	?>
+	</table>
+
+	
+	<?php do_action('woocommerce_email_after_order_table', $order, false); ?>
+	<?php do_action( 'woocommerce_email_order_meta', $order, false ); ?>
+	
+</td></tr>
+
+
+
+
+
+<?php woocommerce_get_template('emails/email-addresses2.php', array( 'order' => $order )); ?>
+<?php do_action('woocommerce_email_footer'); ?>
+
+
+

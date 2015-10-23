@@ -1,0 +1,63 @@
+@mixin container_settings {
+	margin: 0 auto;
+	padding: 0 $grid-padding;
+	
+	//min-width: 1024px;
+	max-width: $max-width+px;
+}
+
+/* http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/ */
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 1) + em;
+	font-size: $sizeValue + rem;
+	/* Usage: @include font-size(13); */
+}
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+    $max: length($values);
+    $pxValues: '';
+    $remValues: '';
+
+    @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*16}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+} 
+
+@for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+} 
+
+#{$property}: $pxValues;
+#{$property}: $remValues;
+
+/* Usage: @include @include rem-fallback(margin, 10, 20, 30, 40); */
+}
+
+
+@mixin skew( $deg ) {
+	-moz-transform: skewX($deg);
+	-webkit-transform: skewX($deg);
+	-o-transform: skewX($deg);
+	-ms-transform: skewX($deg);
+	transform: skewX($deg);
+}
+
+
+// Media queries
+@mixin BREAKPOINT($size) {
+	$size : $size + px;
+	@media screen and (max-width: $size) { @content; }
+}

@@ -1,0 +1,60 @@
+$standard_font: 'Lato', Arial, sans-serif;
+
+$color_red:  #ec1f27;
+$color_blue: #2e89c9;
+$color_grey: #303030;
+
+$color_red_hover: #ffd9da;
+
+
+#tinymce.wp-editor {
+	font-size: 14px;
+	color: #303030;
+	font-family: $standard_font;
+	line-height: 20px;
+	a {
+		color: $color_red;
+		text-decoration: underline;
+	}
+	.color_red {color: $color_red;}
+	.color_blue {color: $color_blue;}
+	.color_grey {color: $color_grey;}
+	.fs14 {font-size: 14px;}
+	.fs16 {font-size: 16px; margin-top: 13px !important; line-height: 23px}
+	.fs22 {font-size: 22px;}
+	.fs24 {font-size: 24px;}
+	.lh23 {line-height: 23px;}
+	.lh25 {line-height: 25px;}
+	h1 {
+		display: none;
+	}
+	h2 {
+		display: none;
+	}
+	h3 {
+		display: none;
+	}
+	pre {
+		font-size: 23px;
+		line-height: 30px;
+		font-weight: 300;
+	}
+	h4, h5, h6 {
+		color: $color_red;
+		margin: 15px 0px;
+		padding: 0px;
+	}
+	h4 {
+		font-size: 24px;
+		line-height: 31px;
+	}
+	h5 {
+		font-size: 22px;
+		line-height: 29px;
+	}
+	h6 {
+		font-size: 16px;
+		margin-top: 13px !important;
+		line-height: 23px;
+	}
+}

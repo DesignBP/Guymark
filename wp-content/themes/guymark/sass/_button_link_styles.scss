@@ -1,0 +1,98 @@
+// buttons
+$button_text			: #fff;
+
+$button_inventory_idle	: #000b3e;
+$button_inventory_over	: #d6ddff;
+
+$button_basket_idle		: #00aa08;
+$button_basket_over		: #ccffce;
+
+$button_enquiry_idle	: #ec1f27;
+$button_enquiry_over	: #ffd9da;
+
+
+
+//________________________________________________________________________________ BUTTONS
+
+// default style is enquiry (red)
+.action-link {
+	@include rem-fallback(padding, 0.5, 1.5);
+	border: 1px solid $button_enquiry_idle;
+	color: $button_text;
+	background-color: $button_enquiry_idle;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	@include rem-fallback(font-size, 1.2);
+	@include border-radius(5px, 5px);
+	
+	&:hover {
+		color: $button_enquiry_idle;
+		background-color: $button_enquiry_over;
+		border: 1px solid $button_enquiry_over;
+	}
+
+}
+
+
+.inventory-button {
+	@extend .action-link;
+	border: 1px solid $button_inventory_idle;
+	background-color: $button_inventory_idle;
+	
+	&:hover {
+		color: $button_inventory_idle;
+		background-color: $button_inventory_over;
+		border: 1px solid $button_inventory_over;
+	}
+}
+
+.basket-button {
+	@extend .action-link;
+	border: 1px solid $button_basket_idle;
+	background-color: $button_basket_idle;
+	
+	&:hover {
+		color: $button_basket_idle;
+		background-color: $button_basket_over;
+		border: 1px solid $button_basket_over;
+	}
+	
+}
+
+.basket-link,
+.checkout-links a {
+	@extend .basket-button;
+	border-radius: 0;
+	@include border-right-radius(5px)
+}
+
+.checkout-links a {
+	@include border-radius(5px)
+}
+
+
+.action-link-arrow {
+	@extend .action-link;
+	background-image: url(images/button-arrow-red.png);
+	background-position: 95%;
+	background-repeat: no-repeat;
+}
+
+.search-button {
+	@extend .action-link;
+	
+	&:hover {
+		color: #fff;
+		background-color: $button_inventory_over;
+	}
+}
+
+.checkout-link,
+.add_to_cart_button {
+	@extend .basket-button;
+}
+
+.submit {
+	@extend .action-link;
+}

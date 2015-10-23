@@ -1,0 +1,90 @@
+/* line 10, sass/editor.scss */
+#tinymce.wp-editor {
+  font-size: 14px;
+  color: #303030;
+  font-family: "Lato", Arial, sans-serif;
+  line-height: 20px;
+}
+/* line 15, sass/editor.scss */
+#tinymce.wp-editor a {
+  color: #ec1f27;
+  text-decoration: underline;
+}
+/* line 19, sass/editor.scss */
+#tinymce.wp-editor .color_red {
+  color: #ec1f27;
+}
+/* line 20, sass/editor.scss */
+#tinymce.wp-editor .color_blue {
+  color: #2e89c9;
+}
+/* line 21, sass/editor.scss */
+#tinymce.wp-editor .color_grey {
+  color: #303030;
+}
+/* line 22, sass/editor.scss */
+#tinymce.wp-editor .fs14 {
+  font-size: 14px;
+}
+/* line 23, sass/editor.scss */
+#tinymce.wp-editor .fs16 {
+  font-size: 16px;
+  margin-top: 13px !important;
+  line-height: 23px;
+}
+/* line 24, sass/editor.scss */
+#tinymce.wp-editor .fs22 {
+  font-size: 22px;
+}
+/* line 25, sass/editor.scss */
+#tinymce.wp-editor .fs24 {
+  font-size: 24px;
+}
+/* line 26, sass/editor.scss */
+#tinymce.wp-editor .lh23 {
+  line-height: 23px;
+}
+/* line 27, sass/editor.scss */
+#tinymce.wp-editor .lh25 {
+  line-height: 25px;
+}
+/* line 28, sass/editor.scss */
+#tinymce.wp-editor h1 {
+  display: none;
+}
+/* line 31, sass/editor.scss */
+#tinymce.wp-editor h2 {
+  display: none;
+}
+/* line 34, sass/editor.scss */
+#tinymce.wp-editor h3 {
+  display: none;
+}
+/* line 37, sass/editor.scss */
+#tinymce.wp-editor pre {
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 300;
+}
+/* line 42, sass/editor.scss */
+#tinymce.wp-editor h4, #tinymce.wp-editor h5, #tinymce.wp-editor h6 {
+  color: #ec1f27;
+  margin: 15px 0px;
+  padding: 0px;
+}
+/* line 47, sass/editor.scss */
+#tinymce.wp-editor h4 {
+  font-size: 24px;
+  line-height: 31px;
+}
+/* line 51, sass/editor.scss */
+#tinymce.wp-editor h5 {
+  font-size: 22px;
+  line-height: 29px;
+}
+/* line 55, sass/editor.scss */
+#tinymce.wp-editor h6 {
+  font-size: 16px;
+  margin-top: 13px !important;
+  line-height: 23px;
+}

@@ -1,2 +1,0 @@
-# Guymark
-Guymark website

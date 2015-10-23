@@ -1,0 +1,81 @@
+
+// PJ - Functions --------------------------------------------------------------
+
+@mixin bp_range($min, $max) {@media only screen and (min-width: $min) and (max-width: $max) {@content;}}
+@mixin bp_min($min) {@media only screen and (min-width: $min) {@content;}}
+@mixin bp_max($max) {@media only screen and (max-width: $max) {@content;}}
+
+
+// Grid ----------------------------------------------------------------------
+
+$total-columns			: 12;
+$column-width			: 4em;
+$gutter-width			: 1em;
+$grid-padding			: 1%;
+$side-gutter-width		: 1%;
+
+
+// Sizes ----------------------------------------------------------------------
+$max-width : 1000;
+
+
+
+// Browser support ------------------------------------------------------------
+
+$legacy-support-for-ie  : false;
+$legacy-support-for-ie6 : $legacy-support-for-ie;
+$legacy-support-for-ie7 : $legacy-support-for-ie;
+
+
+
+// Debug ----------------------------------------------------------------------
+
+$show-grid-backgrounds  : false;
+
+
+//________________________________________________________________________________ COLOURS
+$primary		: #ec1f27;
+$secondary		: #2e89c9;
+$tertiary		: #000b3e;
+
+$highlight		: $secondary;
+$light			: #f7f7f9;
+$mid			: #58585a;
+$dark			: #303030;
+
+$link			: #ec1f27;
+$link_hover		: #ec1f27;
+$copy_link		: #83c6f4;
+
+
+$divider		: #ec1f27;
+$alt_divider	: #d3d3d3;
+
+
+$green			: #189d17;
+$statement		: #f0ecec;
+$author			: #aaaaaa;
+
+
+$form_input		: #dadbdd;
+$nav_splitter	: #68972a;
+$support		: #AEB8C2;
+$body_font		: #231f20;
+$button			: $primary;
+$slide_bg		: #b5b9ba;
+$nav			: #ffffff;
+$error			: red;
+$sliderBG		: #dfdbd8;
+$success		: #527720;
+
+
+
+@import 'susyone';
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+@import "normalize.scss";
+@import "core_mixins.scss";
+@import "button_link_styles.scss";
+@import "icon_fonts.scss";
