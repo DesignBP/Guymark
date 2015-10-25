@@ -82,7 +82,6 @@ $(function(){
 		
 			<div id="header-right">
 				<?php woo_search(); ?>
-				
 				<div class="single-cart-totals">
 					<?php woo_nav_before(); ?>
 				</div>
