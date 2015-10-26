@@ -79,9 +79,9 @@ $(function(){
             <div class="mobileonly single-cart-totals" style="display: none;">
                 <?php woo_nav_before(); ?>
             </div>
-		
 			<div id="header-right">
 				<?php woo_search(); ?>
+				<p>aaaa</p>
 				<div class="single-cart-totals">
 					<?php woo_nav_before(); ?>
 				</div>

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;.zip">
+  <component name="PublishConfigData" uploadOnCheckin="f2e912df-b2e3-457c-9992-16bd6323eac3" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;.zip">
     <serverData>
+      <paths name="Guymark FTP">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="WinServer">
         <serverdata>
           <mappings>
@@ -10,5 +17,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="WinServer" />
   </component>
 </project>
