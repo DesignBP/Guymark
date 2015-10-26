@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="98c2cb92-1646-4e1d-abc3-8d4e40751340" name="Guymark FTP" url="http://guymark.com">
+        <fileTransfer host="guymark.com" port="21" rootFolder="/httpdocs" password="dfc9dfcbdfc7dfcfdfc6df9bdfcb" username="davinci">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
