@@ -84,7 +84,6 @@ $(function(){
 				<div class="single-cart-totals">
 					<?php woo_nav_before(); ?>
 				</div>
-				
 			</div>
 		</header>
 	</div>
